@@ -6,10 +6,24 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: "s", serif;
+    font-family: "Playfair", serif;
 }
 body{
     background: #bbc6fa;
+}
+
+.new{
+    animation: fadeInUp 0.5s ease-in ;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .quote-box{
     background: #fff;
@@ -60,13 +74,14 @@ body{
     background: rgb(23,124,229);
     position: absolute;
     top:50%;
-    left: -30px;
+    left:-30px;
 }
 .Button{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left:100px;
+    margin:100px 0 0 0;
+
 }
 .quote-box button{
    background: rgb(23,124,229);
